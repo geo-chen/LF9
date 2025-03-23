@@ -6,6 +6,8 @@ Product: Dashcam
 
 Model: LF9 Pro
 
+Wifi: HiDvr_*
+
 Product Links:
  - https://www.aliexpress.com/item/1005001569438534.html
  - https://www.dhgate.com/product/lf9-pro-dash-cam-1080p-night-vision-car-dvr/884732017.html?skuId=1140075696569122859
