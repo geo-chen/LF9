@@ -1,14 +1,14 @@
 # LF9
 
-Brand: Brandless
+**Brand**: Brandless
 
-Product: Dashcam
+**Product**: Dashcam
 
-Model: LF9 Pro
+**Model**: LF9 Pro
 
-Wifi: HiDvr_*
+**Wifi**: HiDvr_*
 
-Product Links:
+**Product Links**:
  - https://www.aliexpress.com/item/1005001569438534.html
  - https://www.dhgate.com/product/lf9-pro-dash-cam-1080p-night-vision-car-dvr/884732017.html?skuId=1140075696569122859
  - https://www.electronicpro.co.za/products/lf9-pro-1080p-full-hd-car-dvr-wifi-night-vision-170-degree-wide-angle-dash-cam-app-voice-control-g-sensor-dash-camera-recorder
@@ -18,7 +18,7 @@ Product Links:
 
 Finding 1: Unauthenticated Access of Livestream and Download of Video Recordings
 
-Once connected to the dashcam, all video recordings can be dumped via http://192.168.0.1:80/$file without any http-level authentication. Before dumping the videos, the following steps need to be performed via API calls:
+**Description**: Once connected to the dashcam, an attacker can dump all video recordings via http://192.168.0.1:80/$filename without any http-level authentication. To obtain a list of video recording filenames, the following steps need to be performed via API calls:
 
  - register the client
  - check work state
@@ -30,8 +30,25 @@ Once connected to the dashcam, all video recordings can be dumped via http://192
 
 The livestream can also be fetched directly without further authentication at rtsp://192.168.0.1:554/livestream/1
 
+**Vulnerability Type**: Incorrect Access Control
 
-Product Images:
+**Vendor of Product**: HiDvr
+
+**Affected Product Code Base**: LF9 Pro
+
+**Affected Component**: Video storage and live feed
+
+**Attack Type**: Remote
+
+**Impact Code execution**: False
+
+**Impact Information Disclosure**: True
+
+**Attack Vectors**: An attacker connected to the dashcam's network can access the live feed and dump all sensitive video recordings.
+
+**Has vendor confirmed or acknowledged the vulnerability?**: No
+
+**Product Images**:
 
 ![image](https://github.com/user-attachments/assets/bf3ea064-7c3d-4598-b0db-427028a5b8d5)
 
