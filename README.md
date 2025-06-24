@@ -16,7 +16,7 @@
  - https://www.lazada.sg/products/lf9-pro-driving-recorder-dash-cam-1080p-hd-car-dvr-wide-angle-lens-gsensor-parking-monitoring-wifi-smart-voice-i3270955235.html
  - https://shopee.sg/LF9-WiFi-Dashcam-1080P-Night-Vision-Car-Dash-Cam-24h-Parking-Monitor-2K-Car-Camera-Recorder-Car-Accessories-i.265065378.28453064504
 
-## Finding 1: Unauthenticated Access of Livestream and Download of Video Recordings
+## Finding 1 - CVE-2025-6532: Unauthenticated Access of Livestream and Download of Video Recordings
 
 **Description**: Once connected to the dashcam, an attacker can dump all video recordings via http://192.168.0.1:80/$filename without any http-level authentication. To obtain a list of video recording filenames, the following steps need to be performed via API calls:
 
